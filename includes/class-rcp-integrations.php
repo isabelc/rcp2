@@ -10,6 +10,7 @@ class RCP_Integrations {
 
 		return apply_filters( 'rcp_integrations', array(
 			'woocommerce'    => 'WooCommerce',
+			'google-authenticator' => 'Google Authenticator'
 		) );
 
 	}
