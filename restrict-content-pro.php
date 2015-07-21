@@ -107,6 +107,7 @@ global $rcp_export_page;
 // global includes
 require RCP_PLUGIN_DIR . 'includes/install.php';
 include RCP_PLUGIN_DIR . 'includes/class-rcp-capabilities.php';
+include RCP_PLUGIN_DIR . 'includes/class-rcp-integrations.php';
 include RCP_PLUGIN_DIR . 'includes/class-rcp-levels.php';
 include RCP_PLUGIN_DIR . 'includes/class-rcp-member.php';
 include RCP_PLUGIN_DIR . 'includes/class-rcp-payments.php';
