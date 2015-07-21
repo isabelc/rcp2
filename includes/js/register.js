@@ -1,6 +1,7 @@
 var rcp_validating_discount = false;
 var rcp_validating_gateway  = false;
 var rcp_validating_level    = false;
+var rcp_processing          = false;
 jQuery(document).ready(function($) {
 
 	// Initial validation of subscription level and gateway options
@@ -71,6 +72,12 @@ jQuery(document).ready(function($) {
 			}
 		});
 		$('#rcp_submit', form).val( rcp_script_options.pleasewait );
+
+		// Don't allow form to be submitted multiple times simultaneously
+		if( rcp_processing ) {
+			return;
+		}
+		rcp_processing = true;
 
 		$.post( rcp_script_options.ajaxurl, form.serialize() + '&action=rcp_process_register_form&rcp_ajax=true', function(response) {
 
