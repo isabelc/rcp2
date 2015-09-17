@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: RCP2
-Plugin URL: http://isabelcastillo.com/@todo
+Plugin URL: @todo
 Description: Setup a complete subscription system for your WordPress site and deliver premium content to your subscribers. Unlimited subscription packages, membership management, discount codes, registration / login forms, and more.
 Version: 2.2.3-mod4
 Author: Isabel Castillo
